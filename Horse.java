@@ -5,7 +5,7 @@ public class Horse implements Animal {
     private String color;
 
     public Horse() {
-        this("Brown"); // Default color
+        this("Purple"); 
     }
 
     public Horse(String color) {
