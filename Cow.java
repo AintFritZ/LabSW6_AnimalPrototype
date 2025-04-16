@@ -11,7 +11,7 @@ public class Cow implements Animal {
 
     @Override
     public Cow clone() {
-        return new Cow(); // Simple clone
+        return new Cow(); 
     }
 
     @Override
@@ -21,6 +21,6 @@ public class Cow implements Animal {
 
     @Override
     public String getType() {
-        return "Cow"; // Fixed typo
+        return "Cow"; 
     }
 }
