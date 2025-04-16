@@ -1,28 +1,32 @@
-public class Horse implements Animal{
+public class Horse implements Animal {
     private int legs;
     private String sound;
     private String food;
     private String color;
 
-    public Horse(){
+    public Horse() {
+        this("Brown"); // Default color
+    }
+
+    public Horse(String color) {
         this.legs = 4;
         this.sound = "Neigh";
         this.food = "Grass and Hay";
-        this.color = "Purple";
-
+        this.color = color;
     }
 
-    public Horse clone(){
+    @Override
+    public Horse clone() {
         return new Horse(this.color);
     }
 
     @Override
-    public void makeSound(){
+    public void makeSound() {
         System.out.println(this.sound);
     }
-    
+
     @Override
-    public String getType(){
+    public String getType() {
         return "Horse";
     }
 }

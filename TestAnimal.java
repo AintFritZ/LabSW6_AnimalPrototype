@@ -1,4 +1,4 @@
-public class TestAnimal{
+public class TestAnimal {
     public static void main(String[] args) {
         Sheep sheep = new Sheep("Bahbah the Sheep");
         Cow cow = new Cow();
@@ -10,9 +10,8 @@ public class TestAnimal{
         Animal cow1 = registry.createCow();
         Animal horse1 = registry.createHorse();
 
-        sheep1.makeSound();
-        cow1.makeSound();
-        horse.makeSound();
-
+        sheep1.makeSound();  
+        cow1.makeSound();    
+        horse1.makeSound();  
     }
 }
